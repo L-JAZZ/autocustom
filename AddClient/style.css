@@ -1,0 +1,470 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.row {
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px;
+  margin: 1%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 98%;
+  min-height: 200px;
+}
+.boxie{
+  text-align: left;
+  background-color: #ffffff;
+  width: 1200px;
+  border: solid ;
+  border-color: #eeeeee;
+  border-radius: 5px; 
+  padding: 50px;
+  margin: auto;
+}
+.subboxie{
+  position: fixed;
+  right: 300px;
+  top: 200px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #bb1919;
+   color: white;
+   text-align: center;
+}
+/*---------------------------------------------------------------------------------------*/
+blockquote {
+    margin: 0 0 20px;
+    padding: 15px 0;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #747374;
+    text-align: center;
+    font-size: 1.1em;
+    background: #ddd;
+    border-top: 1px solid #aaa;
+}
+footer {
+    background: #666;
+}
+footer .columnWrapper {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+footer .column {
+    width: 180px;
+    padding: 0 0 0 10px;
+    border-right: 2px solid #888;
+    float: left;
+}
+footer .column:last-child {
+    border-right: none;
+}
+footer h4 {
+    padding: 15px 0 7px;
+    color: #ddd;
+    text-transform: capitalize;
+}
+footer .address {
+    font-size: .75em;
+    line-height: 1.6em;
+    color: #bbb;
+}
+footer a:link, footer a:visited {
+    line-height: 1.6em;
+    color: #bbb;
+}
+footer a:hover, footer a:active {
+    color: #ef3e36;
+    transition: color .5s
+}
+footer .copyrightText {
+    padding: 40px 0 10px;
+    text-align: center;
+    font-size: .7em;
+    color: #aaa;
+}
+
+/*---------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 31%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  /* For desktop: */
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 30%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.toplogo {
+  overflow: hidden;
+  background-color: #bb1919;
+  font-family: Helvetica, Arial, freesans, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+}
+.top-container{
+	
+  margin: auto;
+  width: 100%;
+  padding:0 0 20px 0;
+  left: 350px;
+  background-color: #bb1919;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #bb1919;
+  font-family: Helvetica, Arial, freesans, sans-serif;
+
+  font-size: 0.875rem;
+  color: white;
+  padding-left: 25px;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #bb1919;
+}
+
+/* Style the topnav links */
+.topnav li a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  border-left: 1px solid #c44f4f;
+  border-bottom: 0.155rem solid #bb1919;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  border-bottom: 0.155rem solid #fefefe;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: white;
+  }
+  .card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+  .card {
+    width: 100px;
+  }
+}
+
+.subnav ul {
+  font-size: 0.875rem;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  border-bottom: 1px solid lightgray;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.subnav li {
+  float: left;
+  margin-right: 10px;
+}
+
+.subnav li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.subnav li a:hover:not(.active) {
+  font-weight: bold;
+}
+#rSide {
+  float: right;
+}
+
+.subnav li a:link {
+  color: gray;
+}
+.active {
+  background-color: #4caf50;
+}
+.row {
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+.search { 
+float: left; 
+border: 4px solid white; 
+padding-left: 20px; 
+outline: none; 
+width: 10%; 
+margin: auto; 
+margin-top: 2px; 
+-webkit-border-radius: 10px; 
+-moz-border-radius: 10px; 
+border-radius: 10px; 
+-webkit-transition: width .55s ease; 
+-moz-transition: width .55s ease; 
+-ms-transition: width .55s ease; 
+-o-transition: width .55s ease; 
+transition: width .55s ease; 
+margin-left:50px;
+
+} 
+.search:hover { 
+width: 30%; 
+margin:auto; 
+margin-top: 2px; 
+-webkit-transition: width .55s ease; 
+-moz-transition: width .55s ease; 
+-ms-transition: width .55s ease; 
+-o-transition: width .55s ease; 
+transition: width .55s ease; 
+margin-left:50px;
+} 
+h2{
+	padding-right:100px;
+}
+
+
+
+
+
+import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  margin-top:30px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+.fb img {
+  display: block;
+  height: 20px;
+  width: 25px;
+  float: left;
+  margin-left:-5px;
+  margin-bottom:-5px;
+  margin-top:-4px;
+}
+.gg img {
+  display: block;
+  height: 20px;
+  width: 25px;
+  float: left;
+  margin-left:-5px;
+  margin-bottom:-5px;
+  margin-top:-4px;
+}
